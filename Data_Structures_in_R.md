@@ -13,5 +13,7 @@
 
 2. Vectors vs. Lists
 	- All elements of an atomic vector must be the same type, whereas the elements of a list can have different types.
-	
+
 3. There are 4 common types of atomic vectors: logical, integer, double (or numeric), and character.
+
+4. 
