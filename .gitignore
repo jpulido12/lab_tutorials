@@ -1,11 +1,11 @@
 # The following command will ignore all ".pdf" files
-*.pdf
+#*.pdf
 
 # The following command will ignore all ".DS_Store" files
 .DS_Store
 
 # The following command will ignore all ".ris" files
-*.ris
+#*.ris
 
 # The following command will ignore all files in the folder "Images"
-Images/
+#Images/

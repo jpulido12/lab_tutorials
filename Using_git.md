@@ -61,21 +61,55 @@
 
   B. Fetch and Rebase
 
-    - When you **fork** a repository,  it's good practice to regularly sync your fork with the upstream repository.
+   - When you **fork** a repository,  it's good practice to regularly sync your fork with the upstream repository.
 
-   - Usinng the terminal, The `remote` command shows which remote repositories are currently connected to your local repository. It also allows you to add new connections or remove existing ones.
+   - Using the terminal, The `remote` command shows which remote repositories are currently connected to your local repository. It also allows you to add new connections or remove existing ones.
 
-   - Each connection to your local repository has a *name* and a *URL*. 
-
-
-  B. How to create a branch
-
-      1. In the terminal
+   - Each connection to your local repository has a *name* and a *URL*.
 
 
-  B. How to commit changes using Git
+  C. Linking local and remote repositories
 
-      1.
+   - Linking your local repository (the one on your computer) to remote repositories on GitHub
+
+    - If you **clone** a repository, the command automatically adds that **remote repository** under the name `origin`.
+
+
+   2. The git commands `fetch`, `pull`, `merge`, `push` and `sync`
+
+    - The command `git fetch origin` **fetches** any new work that has been **pushed** to that server since you **cloned** (or last **fetched** from) it.
+
+    - The `git fetch` command only downloads the data to your local repository.
+
+    - If I want get changes from the remote repository called `origin` into my local repository I type `git fetch origin`.
+
+    - It doesn’t automatically merge it with any of your work or modify what you’re currently working on. You have to merge it manually into your work when you’re ready.
+
+
+    - the `git pull` command is a `git fetch` command followed by a `git merge` command.
+
+
+    - Git sync does everything in one command meaning pull and push read here
+
+   2. Branching
+
+     - To view the branches in a Git repository, run the command `git branch`
+
+     - To see both local and remote branches use `git branch -a` or `git branch --all`
+
+     - To see details of each brach use `git branch -v` or `git brach --verbose`
+
+     -
+
+     - `git checkout -b BRANCH_NAME` creates a new branch and checks out the new branch
+
+     - `git branch BRANCH_NAME` creates a new branch but leaves you on the same branch.
+
+     - In other words `git checkout -b BRANCH_NAME` does the following for you:
+
+       `git branch BRANCH_NAME    # create a new branch`
+       `git switch BRANCH_NAME    # then switch to the new branch`
+
 
   C. How to open a pull request on GitHub.
     1. **Pull requests**  are the outstanding features or fixes that people are currently working on.
